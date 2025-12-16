@@ -1,66 +1,141 @@
-# BASE – Revenu Universel Décentralisé
+BASE – Revenu Universel Décentralisé
 
-## 1️⃣ Résumé exécutif
-BASE est une crypto-monnaie universelle inspirée de Bitcoin mais conçue pour un revenu universel.
-Chaque être humain peut recevoir un flux automatique de BASE dès sa naissance, garantissant un droit économique plutôt qu’une aide.
+BASE n’est pas une aide sociale, c’est un droit économique.
 
-Objectifs :
-- Redistribution équitable à chaque individu
-- Sécurité et décentralisation via PoW léger CPU
-- Transactions rapides et simples
-- Système transparent pour éviter toute fraude
+BASE est une crypto-monnaie universelle inspirée de Bitcoin mais conçue pour distribuer un revenu minimal à chaque individu dès sa naissance.
 
-## 2️⃣ Flux universel
-| Catégorie | Flux par mois | % utilisable |
-|-----------|---------------|--------------|
-| Adulte    | 1500 B        | 80%          |
-| Enfant    | 750 B         | 50%          |
+1️⃣ Résumé exécutif
 
-- Blocage partiel des fonds pour les enfants
-- Déblocage progressif
+Flux universel automatique pour chaque wallet.
 
-## 3️⃣ Transactions et frais
-- Frais minimes pour maintenir l’infrastructure
-- Transactions signées avec Ed25519
-- Transferts rapides, validés par PoW léger CPU
+Transactions rapides, simples et peu énergivores.
 
-## 4️⃣ Sécurité
-- Wallets uniques + clés Ed25519
-- Flux limité par cycle et âge
-- PoW léger pour empêcher spam/attaques
+Sécurité via PoW léger et signatures Ed25519.
 
-## 5️⃣ Déploiement
+Interface web locale pour consulter et envoyer BASE.
 
-### 5.1 Installation des dépendances
-```bash
+Sauvegarde rolling des 10 derniers cycles pour sécurité.
+
+2️⃣ Objectifs
+
+Garantir un revenu minimal à tout utilisateur.
+
+Créer un système décentralisé et sécurisé.
+
+Permettre l’utilisation dans des services ou biens réels.
+
+Maintenir la stabilité économique du réseau BASE.
+
+3️⃣ Architecture technique
+3.1 Blockchain (Layer 1)
+
+Minage léger CPU toutes les 30 secondes.
+
+Ajout des blocs contenant transactions et flux universel.
+
+Sauvegarde des 10 derniers cycles pour reprise en cas de problème.
+
+3.2 Flux universel
+Statut	Flux mensuel	% utilisable	Commentaire
+Child	750 B	50%	jusqu’à 18 cycles (~18 ans)
+Ado	1000 B	60%	de 18 à 36 cycles
+Adult	1500 B	80%	à partir de 36 cycles
+
+Les fonds sont utilisables immédiatement selon le pourcentage indiqué.
+
+Passage automatique Child → Ado → Adult.
+
+Accumulation même en inactivité.
+
+3.3 Transactions (Layer 2)
+
+Frais minimes pour réseau et créateur à vie.
+
+Signatures Ed25519 pour sécurité.
+
+API REST disponible pour envoi et consultation de BASE.
+
+3.4 Wallets
+
+Création automatique à la première connexion (/wallet/ui).
+
+Export et import de wallet possible via API :
+
+/wallet/export
+
+/wallet/import
+
+Interface web locale pour consulter solde et historique :
+
+http://127.0.0.1:5000/wallet/ui
+
+4️⃣ Déploiement
+4.1 Installation des dépendances
 python -m pip install flask pynacl waitress
 
-## 5.2 Lancer votre node !
-python BASE_PROD.py
+4.2 Lancer le node
+python Base_Final.py
 
-#5.3 API
 
-Voir blockchain :
+Node prêt à fonctionner avec flux automatique.
 
-GET http://127.0.0.1:5000/chain
+Interface web : http://127.0.0.1:5000/wallet/ui
 
-Envoyer B :
+API disponible :
 
-POST http://127.0.0.1:5000/send_tx
-Content-Type: application/json
+/chain → récupérer la blockchain
 
+/send_tx → envoyer des BASE
+
+5️⃣ Sauvegarde et reprise
+
+Sauvegarde rolling des 10 derniers cycles dans le dossier backups.
+
+Permet de restaurer la blockchain et les wallets en cas de problème.
+
+6️⃣ Export / Import Wallet
+
+Exporter son wallet pour sauvegarde personnelle :
+
+POST /wallet/export
 {
-  "from": "WALLET_ID_FROM",
-  "to": "WALLET_ID_TO",
-  "amount": 100
+  "wallet": "ID_WALLET"
 }
 
-## 6️⃣ Roadmap
 
-1. Test local (PC/VPS)
+Importer un wallet existant pour retrouver ses fonds :
 
-2. Test public multi-node
+POST /wallet/import
+{
+  "wallet": "ID_WALLET",
+  "sk": "CLE_PRIVEE_HEX",
+  "status": "adult"
+}
 
-3. Publication globale (GitHub + site officiel)
+7️⃣ Roadmap
 
-4. Applications paiement et intégration services/biens
+Phase 1 – Test local
+
+Node sur PC personnel ou VPS.
+
+Validation des flux universels et transactions.
+
+Phase 2 – Test public
+
+Lancement de quelques nodes pour test réseau.
+
+Validation discovery automatique et multi-node.
+
+Phase 3 – Production
+
+Publication GitHub + site officiel.
+
+Intégration avec services/DEX pour échange.
+
+8️⃣ Notes
+
+Chaque utilisateur peut recevoir son flux mensuel automatiquement dès la création de son wallet.
+
+Les fonds sont sécurisés via signatures et sauvegardes.
+
+La valeur économique dépendra de l’adoption et des échanges dans la vie réelle ou via DEX.
