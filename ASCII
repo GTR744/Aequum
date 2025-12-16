@@ -1,0 +1,21 @@
++-----------------+
+|  Layer 1        |  <- PoW léger CPU
+|  Blockchain     |
++-----------------+
+         |
+         v
++-----------------+
+|  Layer 2        |  <- Transactions
+|  Transferts B   |
++-----------------+
+         |
+         v
++-----------------+
+|  Flux universel |  <- Revenu universel
+|  Distribution   |
++-----------------+
+         |
+         v
++-----------------+
+|  Wallets        |  <- Adulte / Enfant
++-----------------+
