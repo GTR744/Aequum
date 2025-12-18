@@ -267,3 +267,160 @@ bots synchronisés
 preuve sociale
 
 pas de punition automatique
+
+## 📌 Valeur et Collatéral
+11.1 Nature de la valeur de BASE
+
+BASE ne tire pas sa valeur d’une promesse de conversion, d’un rendement ou d’un actif garanti.
+
+La valeur de BASE émerge exclusivement de :
+
+son usage réel dans les échanges de biens et services,
+
+l’adoption volontaire par les utilisateurs,
+
+la continuité et la stabilité du protocole,
+
+la confiance collective dans ses règles publiques.
+
+BASE n’est pas indexée à une monnaie fiat, à un stablecoin, ni à un actif matériel.
+
+11.2 Absence de garantie de conversion
+
+Le protocole BASE :
+
+ne garantit aucun taux de conversion,
+
+ne promet aucun rachat,
+
+n’accorde aucun droit individuel à l’échange contre une monnaie externe.
+
+Toute conversion éventuelle entre BASE et d’autres actifs relève exclusivement :
+
+d’accords volontaires entre utilisateurs,
+
+de plateformes tierces indépendantes,
+
+ou de mécanismes non contraignants du protocole.
+
+11.3 Réserves et fonds protocolaires
+
+Le protocole peut détenir des réserves externes (cryptomonnaies, stablecoins ou autres actifs), constituées par :
+
+des contributions volontaires,
+
+des frais protocolaires,
+
+des réaffectations prévues par les règles publiques.
+
+Ces réserves :
+
+n’appartiennent à aucun utilisateur individuel,
+
+ne constituent pas une dette envers les détenteurs de BASE,
+
+peuvent être utilisées uniquement pour la stabilité, la sécurité ou le fonctionnement du protocole.
+
+Aucune réserve ne crée de droit automatique ou exigible à conversion.
+
+11.4 Fonds bloqués et usage systémique
+
+Certaines unités de BASE peuvent être bloquées :
+
+volontairement par les utilisateurs,
+
+mécaniquement par le protocole,
+
+ou temporairement par des règles de stabilité.
+
+Les fonds bloqués :
+
+ne sont pas récupérables par défaut,
+
+ne produisent pas de rendement garanti,
+
+peuvent être mobilisés par le protocole en cas de besoin systémique,
+selon des règles publiques, limitées et traçables.
+
+Le protocole peut utiliser ces fonds pour :
+
+amortir des chocs,
+
+soutenir des usages collectifs,
+
+maintenir la continuité économique.
+
+11.5 Déclaration de valeur matérielle
+
+BASE peut permettre la déclaration volontaire de valeurs externes ou matérielles, telles que :
+
+biens immobiliers,
+
+biens physiques,
+
+productions récurrentes,
+
+réserves tangibles ou documentées.
+
+Ces déclarations :
+
+n’impliquent aucune garantie,
+
+n’entraînent aucune création automatique de BASE,
+
+n’obligent ni le protocole ni les autres utilisateurs.
+
+Elles servent uniquement à :
+
+faciliter des accords,
+
+documenter des échanges,
+
+améliorer la transparence économique.
+
+11.6 Refus de la financiarisation
+
+BASE refuse explicitement :
+
+la promesse de rendement,
+
+la spéculation institutionnelle,
+
+l’accumulation passive rémunérée,
+
+la transformation de BASE en produit financier.
+
+Toute activité financière externe utilisant BASE ne relève pas du protocole et n’engage pas sa responsabilité.
+
+11.7 Responsabilité et autonomie
+
+Chaque utilisateur est responsable :
+
+de ses choix économiques,
+
+de ses échanges,
+
+de ses accords externes.
+
+Le protocole BASE :
+
+fournit un cadre,
+
+applique des règles,
+
+garantit la transparence du code,
+
+mais n’est pas responsable des pertes, vols, conflits ou usages frauduleux hors protocole.
+
+11.8 Principe fondamental
+
+BASE ne garantit pas la richesse.
+BASE garantit l’accès.
+
+La valeur maximale que chacun peut tirer de BASE est proportionnelle :
+
+à son usage réel,
+
+à sa contribution à l’économie,
+
+à la valeur qu’il apporte aux autres.
